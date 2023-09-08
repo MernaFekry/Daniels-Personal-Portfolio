@@ -1,0 +1,330 @@
+
+/* Common */
+.subtitle h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+    position: relative;
+}
+.subtitle h2::before{
+    content: " ";
+    width: 250px;
+    padding: 5px;
+    /* height: 5 px; */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom:5px dotted rgba(0, 0, 0, 0.1);
+}
+li{
+    list-style: none;
+}
+
+
+
+
+
+/* Header Section */
+.nav-link{
+    color: black;
+}
+header{
+    background-image: url('../images/bg.jpg');
+    background-position: 100% 100%;
+    background-size: cover;
+    min-height: 100vh;
+    /* position: relative; */
+}
+.header_layer{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+}
+.header_content h1{
+    font-size: 50px;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_text h3{
+    font-size: 50px;
+}
+.header_text h3::after{
+    padding-left: 10px;
+    animation: movement 3s linear 2s infinite alternate ;
+    content: "Developer|";
+}
+@keyframes movement{
+    0%{
+        content: "Deve |"
+    }
+    10%{
+        content: "Develo |"
+    }
+    20%{
+        content: "Developer |"
+    }
+    30%{
+        content: "Develop |"
+    }
+    40%{
+        content: "Deve |"
+    }
+    50%{
+        content: "|"
+    }
+    60%{
+        content: "De |"
+    }
+    70%{
+        content: "Design |"
+    }
+    80%{
+        content: "Designer |"
+    }
+    90%{
+        content: "Desig |"
+    }
+    100%{
+        content: " |"
+    }
+}
+/* .header_icons i{
+    background: rgba(0, 0, 0, 0.3) !important; */
+
+    /* padding-left: 10px; */
+/* } */
+
+
+
+
+
+
+
+/* About Section */
+.progress_item h6{
+    font-size: small;
+}
+
+
+
+
+
+
+
+/* Testimonals Section */
+.slider_item h5,.slider_item h6{
+    font-size:15px;
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    margin: 10px !important;
+    background-color:#D6D6D6 !important;
+}
+.carousel-indicators .active{
+    background-color:#869791 !important;
+}
+.testimonials_section{
+    background-color:#F7F7F7 ;
+}
+.slider_container{
+    width: 65%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+/* Contact Us Section */
+.contact_container{
+    width: 65%;
+    margin: auto;
+}
+.contact_col i{
+    padding: 15px;
+    background-color:#f4f4f4 ;
+    transform: scale(1.5);
+    margin-bottom: 15px;
+    transition: .7s ease;
+}
+.contact_col i:hover{
+    background-color: black;
+    color: white;
+    
+}
+form .text_area{
+    /* width: 150px; */
+    height: 150px;
+    padding-bottom: 100px;
+}
+
+.form_btn{
+    transition: .7s ease;
+}
+.form_btn:hover{
+    background-color: white !important;
+    color: black !important;
+}
+.row_2 textarea{
+    width: 100%;
+    background-color: #f4f4f4 !important;
+}
+.row input{
+    background-color: #f4f4f4 !important;
+}
+
+
+
+
+
+
+
+/* Services Section */
+.services_section{
+    background-color: #F7F7F7;
+}
+.service_item i{
+    transform: scale(1.5);
+    margin: auto;
+    padding: 15px;
+    background-color: #F7F7F7;
+    transition: .7s ease;
+}
+.service_item i:hover{
+    background-color: black;
+    color: white;
+}
+/* .service_item{
+    border-color: #F7F7F7;
+    box-shadow: 5px 5px #F7F7F7;
+} */
+
+
+
+
+
+
+
+
+
+/* Portfolio Section */
+/* .portfolio_container{
+    width: 65%;
+    margin: auto;
+} */
+.portfolio_item img{
+    width: 100%;
+    /* position: relative; */
+}
+.portfolio_item{
+    /* transition: .7 ease; */
+    overflow: hidden;
+    /* position: relative; */
+}
+.portfolio_item:hover .img_layer{
+    transform: translateY(0%);
+    /* transition: .7 ease; */
+    bottom:5px ;
+}
+.img_layer{
+    background-color: white;
+    /* position: absolute; */
+    top:5px ;
+    left:5px ;
+    right:5px ;
+    bottom:0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: .7 all;
+}
+.port_icon{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.portfolio_col button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.port_icon_2:hover,.portfolio_col button:hover{
+    background-color: white;
+    color:black;
+    border: 0.5px solid black;
+}
+.port_icon:hover{
+    background-color: white;
+    color: black;
+    border: 0.5px solid black;
+}
+
+
+
+
+
+
+
+/* Blog Section */
+.blog_row{
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: row; */
+}
+.blog_section{
+    background-color: #F7F7F7;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* Statistics Section */
+.stat_item i{
+    transform: scale(1.5);
+    margin-bottom: 5px;
+}
+.stat_item h3{
+    font-weight: 800;
+}
+.stat_item h6{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------- */
+/* Footer Section */
+footer{
+    /* background-color: black; */
+    color: #F4F4F4;
+}
